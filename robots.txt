@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://echoesofstillnessmusic.github.io/sitemap.xml
