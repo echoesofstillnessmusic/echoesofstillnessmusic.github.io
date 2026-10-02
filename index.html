@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Echoes of Stillness Music — Healing frequencies, Reiki and sleep sessions</title>
+<meta name="description" content="Echoes of Stillness Music: Reiki sessions every Monday, 8-hour sleep frequencies every Thursday, Solfeggio healing frequencies, binaural beats and relaxing background music.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #0C1D21;      /* deep forest night */
+    --mist: #17343A;       /* fog between trees */
+    --moss: #2B4F52;       /* hairlines */
+    --gold: #FFD700;       /* brand gold */
+    --ember: #C9A646;      /* softer gold for secondary text */
+    --breath: #DCE7E2;     /* body text */
+    --display: "Cinzel", "Trajan Pro", Georgia, serif;
+    --body: "Cormorant Garamond", Garamond, Georgia, serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    min-height: 100vh;
+    background:
+      radial-gradient(ellipse 90% 55% at 50% 0%, var(--mist) 0%, transparent 70%),
+      radial-gradient(ellipse 70% 40% at 50% 100%, #12292D 0%, transparent 75%),
+      var(--night);
+    color: var(--breath);
+    font-family: var(--body);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding: env(safe-area-inset-top, 0) 1.5rem env(safe-area-inset-bottom, 0);
+  }
+  main { max-width: 38rem; margin: 0 auto; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; border-radius: 2px; }
+
+  /* Hero: the one moment of motion — a slow breathing glow */
+  .hero { text-align: center; padding: 6rem 0 4rem; position: relative; }
+  .glow {
+    position: absolute; left: 50%; top: 5.5rem;
+    width: 15rem; height: 15rem; margin-left: -7.5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,215,0,.22) 0%, rgba(255,215,0,.06) 45%, transparent 70%);
+    animation: breathe 8s ease-in-out infinite;
+    pointer-events: none;
+  }
+  @keyframes breathe {
+    0%, 100% { transform: scale(.85); opacity: .6; }
+    50% { transform: scale(1.15); opacity: 1; }
+  }
+  h1 {
+    position: relative;
+    font-family: var(--display);
+    font-weight: 400;
+    color: var(--gold);
+    font-size: clamp(2.4rem, 9vw, 3.8rem);
+    line-height: 1.1;
+    letter-spacing: .04em;
+  }
+  h1 small { display: block; font-size: .38em; letter-spacing: .5em; margin-top: .8rem; color: var(--ember); padding-left: .5em; }
+  .rule { width: 4rem; height: 1px; background: var(--gold); margin: 2rem auto; opacity: .7; }
+  .lede { font-style: italic; font-size: 1.4rem; max-width: 28rem; margin: 0 auto; }
+
+  .subscribe {
+    display: inline-block; margin-top: 2.5rem;
+    font-family: var(--display); font-size: 1rem; letter-spacing: .12em;
+    color: var(--night); background: var(--gold);
+    padding: .95rem 2.2rem; border-radius: 999px; text-decoration: none;
+    transition: background .2s;
+  }
+  .subscribe:hover { background: #FFE34D; }
+
+  /* Weekly rhythm */
+  .week { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--moss); border-bottom: 1px solid var(--moss); }
+  .day { padding: 1.6rem 1rem; text-align: center; }
+  .day + .day { border-left: 1px solid var(--moss); }
+  .day h3 { font-family: var(--display); font-weight: 400; color: var(--gold); font-size: 1.15rem; letter-spacing: .08em; }
+  .day p { font-size: 1.1rem; color: var(--breath); opacity: .85; }
+
+  /* Paths by need */
+  section { padding: 4rem 0 0; }
+  h2 { font-family: var(--display); font-weight: 400; color: var(--gold); font-size: 1.6rem; text-align: center; margin-bottom: .4rem; }
+  .intro { text-align: center; font-style: italic; color: var(--ember); margin-bottom: 2rem; }
+  .need { margin-bottom: 2.4rem; }
+  .need h3 { font-family: var(--display); font-weight: 600; font-size: 1rem; letter-spacing: .1em; color: var(--ember); margin-bottom: .5rem; }
+  .need ul { list-style: none; }
+  .need li a {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: .8rem 0; border-bottom: 1px solid var(--moss); text-decoration: none;
+  }
+  .need li:first-child a { border-top: 1px solid var(--moss); }
+  .need li a span:first-child { font-size: 1.3rem; }
+  .need li a span:last-child { font-size: 1rem; color: var(--ember); white-space: nowrap; font-style: italic; }
+  .need li a:hover span:first-child { color: var(--gold); }
+
+  /* Elsewhere */
+  .elsewhere { text-align: center; padding-bottom: 2rem; }
+  .elsewhere ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem 2rem; }
+  .elsewhere a { text-decoration: none; font-size: 1.2rem; border-bottom: 1px solid var(--moss); }
+  .elsewhere a:hover { color: var(--gold); border-color: var(--gold); }
+
+  footer { text-align: center; font-size: 1rem; opacity: .6; padding: 3rem 0 3.5rem; }
+
+  @media (max-width: 480px) {
+    .hero { padding-top: 4.5rem; }
+    .glow { top: 4rem; }
+    .week { grid-template-columns: 1fr; }
+    .day + .day { border-left: none; border-top: 1px solid var(--moss); }
+  }
+  @media (prefers-reduced-motion: reduce) { .glow { animation: none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <div class="glow" aria-hidden="true"></div>
+    <h1>Echoes of Stillness<small>MUSIC</small></h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="lede">Reiki sessions, healing frequencies and quiet sound for sleep, focus and rest.</p>
+    <a class="subscribe" href="https://www.youtube.com/@EchoesOfStillnessMusic?sub_confirmation=1">Subscribe on YouTube</a>
+  </header>
+
+  <div class="week">
+    <div class="day">
+      <h3>Every Monday</h3>
+      <p>A new Reiki healing session</p>
+    </div>
+    <div class="day">
+      <h3>Every Thursday</h3>
+      <p>A new 8-hour sleep frequency</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>What do you need today?</h2>
+    <p class="intro">Choose a path and press play.</p>
+
+    <div class="need">
+      <h3>To heal and recharge</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PLeFHLOgSNCJk"><span>Reiki Symbols · Healing Sessions</span><span>15–45 min</span></a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLaFOXXb-sbPA"><span>Reiki Practice · Session Timer &amp; Tools</span><span>for practitioners</span></a></li>
+      </ul>
+    </div>
+
+    <div class="need">
+      <h3>To sleep deeply</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PLYW3LUb6lPHA"><span>Binaural Beats · Sleep &amp; Deep Meditation</span><span>2–8 hours</span></a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PL4BONXqh8e1ZywWWcuI_ef-Pz7RZ41vLd"><span>Solfeggio Sleep Music</span><span>1 hour</span></a></li>
+      </ul>
+    </div>
+
+    <div class="need">
+      <h3>To balance your chakras</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PLXef1JHtCBWY"><span>Chakra Meditation</span><span>10 min</span></a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PLam76GwlB11k"><span>Solfeggio Relaxation</span><span>30 min</span></a></li>
+      </ul>
+    </div>
+
+    <div class="need">
+      <h3>To focus and work calmly</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/playlist?list=PL4BONXqh8e1Zzie0vsKETYYE4MMX7PiEU"><span>Relaxing Background Music</span><span>1 hour</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="elsewhere">
+    <h2>Find us elsewhere</h2>
+    <p class="intro">Short moments of calm, every week.</p>
+    <ul>
+      <li><a href="https://www.youtube.com/@EchoesOfStillnessMusic">YouTube</a></li>
+      <li><a href="https://www.instagram.com/echoesofstillnessmusic">Instagram</a></li>
+      <li><a href="https://www.tiktok.com/@echoesofstillnessmusic">TikTok</a></li>
+      <li><a href="https://www.facebook.com/EchoesOfStillnessMusic">Facebook</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Best experienced with headphones. 🎧</p>
+    <p>© 2026 Echoes of Stillness Music</p>
+  </footer>
+
+</main>
+</body>
+</html>
